@@ -11,7 +11,7 @@ import HamburgerIcon from '@/public/assets/shared/mobile/icon-hamburger.svg'
 import EmptyIllustration from '@/public/assets/suggestions/illustration-empty.svg'
 import jsonData from '@/data/data.json'
 import { ProductRequest } from "@/types"
-import { Categories } from "../.next/constants"
+import { Categories } from "../constants"
 import { checklocalData } from "@/components/utils/checklocalData"
 import { Listbox } from "@headlessui/react"
 
