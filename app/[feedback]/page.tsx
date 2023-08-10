@@ -2,14 +2,13 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Comment, ProductRequest, Reply, UserData } from '@/types'
-import { Params } from 'next/dist/shared/lib/router/utils/route-matcher'
 import ArrowLeftIcon from '@/public/assets/shared/icon-arrow-left.svg'
 import Image from 'next/image'
 import UpArrowIcon from '@/public/assets/shared/icon-arrow-up.svg'
 import CommentsIcon from '@/public/assets/shared/icon-comments.svg'
 import { checklocalData } from '@/components/utils/checklocalData'
 
-export default function FeedBackDetails({params}: Params) {
+export default function FeedBackDetails({params}: { params: { feedback: number } }) {
   const [comment, setComment] = useState<string>('')
   const [reply, setReply] = useState<string>('')
   const [showReply, setShowReply] = useState<boolean>(false)
@@ -37,7 +36,7 @@ export default function FeedBackDetails({params}: Params) {
       return;
     }
     let newCommentObj = {
-      id: params.feedback,
+      // id: params.feedback,
       content: comment,
       user: data?.currentUser
     }
