@@ -30,6 +30,7 @@ Users should be able to:
 - Write down the detailed steps here
 
 --------------------------------------------------------------------------------------------------------
+# NOTE: do clear your localStorage before use.
 
 # Steps to run project
 - git clone https://github.com/paarth17032000/eq-tk.git
