@@ -7,7 +7,7 @@ import ArrowDownIcon from '@/public/assets/shared/icon-arrow-down.svg'
 import PlusIcon from '@/public/assets/shared/icon-plus.svg'
 import Image from 'next/image'
 import { Listbox } from '@headlessui/react'
-import { Categories, updateStatus } from '../../constants'
+import { Categories, updateStatus } from '../../../.next/constants'
 import { checklocalData } from '@/components/utils/checklocalData'
 
 import { useRouter } from 'next/navigation'
