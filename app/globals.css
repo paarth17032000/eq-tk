@@ -1,27 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.max-width{
+  @apply max-w-[1400px] mx-auto
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.padding-x{
+  @apply xl:px-40 md:px-10 px-0
+}
+
+.padding-y{
+  @apply xl:py-24 md:py-16 py-0
+}
+
+.rounded-primary{
+  @apply rounded-[10px]
+}
+
+.main-gradient{
+  @apply bg-gradient-to-r from-[#28A7ED] via-[#A337F6] to-[#E84D70]
 }
