@@ -93,4 +93,4 @@ Users should be able to:
 - tailwind and headless-ui is used for better styling and fonts are used from google fonts
 - assets are present in public folder
 
-### Thankyou!
+### Thankyou! you can view website on https://eq-tk.vercel.app/
